@@ -1,0 +1,27 @@
+amt=0 ; a=0 ; deci=1 ;tb=0 ; fb=0
+for i in range (0,100):
+ amt=int(input("take amount: ")) 
+ deci=int(input("want to continue?? 0/1=")) 
+ a=amt+a 
+ print(a) 
+ disc=a*0.20 
+ tb=amt-disc 
+ print("total bill=",tb) 
+ fb=tb+fb 
+ print("final bill=",fb)
+ if(deci==0): 
+     break
+ if(tb>=500 and tb<700): 
+     disc=a*0.30 
+     tb=amt-disc  
+     print("total bill=",tb) 
+     fb=tb+fb 
+     print("final bill=",fb)
+ elif(tb>=700 and tb<1000): 
+     disc=a*0.40 
+     tb=amt-disc 
+     print("total bill=",tb) 
+     fb=tb+fb 
+      print("final bill=",fb)
+else: 
+     print("invalid")
